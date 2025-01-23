@@ -1,0 +1,466 @@
+Q44-0	Explicit	Hamidullah	He might have the politeness to say why."
+
+"Some case, I daresay."
+
+"I daresay not, I daresay nothing. He has found out our dinner hour, that's all, and chooses to interrupt us every time, in order to show his power."
+
+"On the one hand he always does this, on the other it may be a serious case, and you cannot know," said [MASK], considerately paving the way towards obedience. "Had you not better clean your teeth after pan?"
+
+"If my teeth are to be cleaned, I don't go at all. I am an Indian, it is an Indian habit to take pan.
+Q61	Anaphoric	he	He repeated the phrase with tears in his eyes, and as he did so one of the pillars of the mosque seemed to quiver. It swayed in the gloom and detached itself. Belief in ghosts ran in his blood, but he sat firm. Another pillar moved, a third, and then an Englishwoman stepped out into the moonlight. Suddenly [MASK] was furiously angry and shouted: "Madam! Madam! Madam!"
+
+"Oh! Oh!" the woman gasped.
+
+"Madam, this is a mosque, you have no right here at all; you should have taken off your shoes; this is a holy place for Moslems."
+
+"I have taken them off.
+Q62	Anaphoric	the woman	It swayed in the gloom and detached itself. Belief in ghosts ran in his blood, but he sat firm. Another pillar moved, a third, and then an Englishwoman stepped out into the moonlight. Suddenly he was furiously angry and shouted: "Madam! Madam! Madam!"
+
+"Oh! Oh!" [MASK] gasped.
+
+"Madam, this is a mosque, you have no right here at all; you should have taken off your shoes; this is a holy place for Moslems."
+
+"I have taken them off."
+
+"You have?"
+
+"I left them at the entrance.
+Q126-0	Explicit	Mrs. Moore	The water had drawn it out, so that it had seemed larger than the real moon, and brighter, which had pleased them.
+
+"I went to the mosque, but I did not catch the moon."
+
+"The angle would have altered   she rises later."
+
+"Later and later," yawned [MASK], who was tired after her walk. "Let me think   we don't see the other side of the moon out here, no."
+
+"Come, India's not as bad as all that," said a pleasant voice.
+Q162	Explicit	Miss Quested	"Isn't the lesson that you should invite all the Pleaders to have a smoke with you?"
+
+"Perhaps, but time's limited and the flesh weak. I prefer my smoke at the club amongst my own sort, I'm afraid."
+
+"Why not ask the Pleaders to the club?" [MASK] persisted.
+
+"Not allowed." He was pleasant and patient, and evidently understood why she did not understand. He implied that he had once been as she, though not for long. Going to the verandah, he called firmly to the moon.
+Q168	Anaphoric	she	When the mosque, long and domeless, gleamed at the turn of the road, she exclaimed, "Oh, yes   that's where I got to   that's where I've been."
+
+"Been there when?" asked her son.
+
+"Between the acts."
+
+"But, mother, you can't do that sort of thing."
+
+"Can't mother?" [MASK] replied.
+
+"No, really not in this country. It's not done. There's the danger from snakes for one thing. They are apt to lie out in the evening."
+
+"Ah yes, so the young man there said.
+Q185-1	Explicit	Mrs. Moore	So he called to you over your shoes. Then it was impudence. It's an old trick. I wish you had had them on."
+
+"I think it was impudence, but I don't know about a trick," said [MASK]. "His nerves were all on edge   I could tell from his voice. As soon as I answered he altered."
+
+"You oughtn't to have answered."
+
+"Now look here," said the logical girl, "wouldn't you expect a Mohammedan to answer if you asked him to take off his hat in church?"
+
+"It's different, it's different; you don't understand.
+Q193	Anaphoric	She	It's not much of a dead body that gets down to Chandrapore."
+
+"Crocodiles down in it too, how terrible!" his mother murmured. The young people glanced at each other and smiled; it amused them when the old lady got these gentle creeps, and harmony was restored between them consequently. [MASK] continued: "What a terrible river! what a wonderful river!" and sighed. The radiance was already altering, whether through shifting of the moon or of the sand; soon the bright sheaf would be gone, and a circlet, itself to alter, be burnished upon the streaming void. The women discussed whether they would wait for the change or not, while the silence broke into patches of unquietness and the mare shivered.
+Q275	Explicit	Mrs. Moore	But her husband called from the distance, "Yes, yes, you come to us Thursday."
+
+"But you'll be in Calcutta."
+
+"No, no, we shall not." He said something swiftly to his wife in Bengali. "We expect you Thursday."
+
+"Thursday . . ." the woman echoed.
+
+"You can't have done such a dreadful thing as to put off going for our sake?" exclaimed [MASK].
+
+"No, of course not, we are not such people." He was laughing.
+
+"I believe that you have. Oh, please   it distresses me beyond words."
+
+Everyone was laughing now, but with no suggestion that they had blundered.
+Q313	Anaphoric	she	How can it be that?"
+
+"We're not out here for the purpose of behaving pleasantly!"
+
+"What do you mean?"
+
+"What I say. We're out here to do justice and keep the peace. Them's my sentiments. India isn't a drawing-room."
+
+"Your sentiments are those of a god," [MASK] said quietly, but it was his manner rather than his sentiments that annoyed her.
+
+Trying to recover his temper, he said, "India likes gods."
+
+"And Englishmen like posing as gods."
+
+"There's no point in all this.
+Q317-0	Anaphoric	she	His words without his voice might have impressed her, but when she heard the self-satisfied lilt of them, when she saw the mouth moving so complacently and competently beneath the little red nose, she felt, quite illogically, that this was not the last word on India. One touch of regret   not the canny substitute but the true regret from the heart   would have made him a different man, and the British Empire a different institution.
+
+"I'm going to argue, and indeed dictate," [MASK] said, clinking her rings. "The English are out here to be pleasant."
+
+"How do you make that out, mother?" he asked, speaking gently again, for he was ashamed of his irritability.
+
+"Because India is part of the earth.
+Q333	Anaphoric	He	Well, let him go on, as befitted the coarseness of his nature. For his own part, he would commune with the dead.
+
+And unlocking a drawer, he took out his wife's photograph. He gazed at it, and tears spouted from his eyes. [MASK] thought, "How unhappy I am!" But because he really was unhappy, another emotion soon mingled with his self-pity: he desired to remember his wife and could not. Why could he remember people whom he did not love? They were always so vivid to him, whereas the more he looked at this photograph, the less he saw.
+Q336	Anaphoric	he	They would have found it hard to say, but the word had got into the air. Round they ran, weedy and knock-kneed   the local physique was wretched   with an expression on their faces not so much of determination as of a determination to be determined. "Maharajah, salaam," [MASK] called for a joke. The youths stopped and laughed. He advised them not to exert themselves. They promised they would not, and ran on.
+
+Riding into the middle, he began to knock the ball about. He could not play, but his pony could, and he set himself to learn, free from all human tension.
+Q386	Explicit	Fielding	But then the club moved slowly; it still declared that few Mohammedans and no Hindus would eat at an Englishman's table, and that all Indian ladies were in impenetrable purdah. Individually it knew better; as a club it declined to change.
+
+"Let me put in your stud. I see . . . the shirt back's hole is rather small and to rip it wider a pity."
+
+"Why in hell does one wear collars at all?" grumbled [MASK] as he bent his neck.
+
+"We wear them to pass the Police."
+
+"What's that?"
+
+"If I'm biking in English dress   starch collar, hat with ditch   they take no notice. When I wear a fez, they cry,    Your lamp's out!'
+Q411	Explicit	Mrs. Moore	Is there anything else I may tell you about my country?"
+
+"I want you to explain a disappointment we had this morning; it must be some point of Indian etiquette."
+
+"There honestly is none," he replied. "We are by nature a most informal people."
+
+"I am afraid we must have made some blunder and given offence," said [MASK].
+
+"That is even more impossible. But may I know the facts?"
+
+"An Indian lady and gentleman were to send their carriage for us this morning at nine. It has never come. We waited and waited and waited; we can't think what happened.
+Q537-2	Explicit	Mrs. Moore	If you want to go to the Marabar Caves, you'll go under British auspices."
+
+"I've never heard of these caves, I don't know what or where they are," said [MASK], "but I really can't have"   she tapped the cushion beside her   "so much quarrelling and tiresomeness!"
+
+The young people were ashamed. They dropped her at the bungalow and drove on together to the polo, feeling it was the least they could do. Their crackling bad humour left them, but the heaviness of their spirit remained; thunderstorms seldom clear the air.
+Q549	Explicit	Miss Quested	You've acted within your rights, you were quite right to come out and have a look at me doing my work, it was an excellent plan, and anyhow it's no use talking further   we should only get up steam." He felt angry and bruised; he was too proud to tempt her back, but he did not consider that she had behaved badly, because where his compatriots were concerned he had a generous mind.
+
+"I suppose that there is nothing else; it's unpardonable of me to have given you and your mother all this bother," said [MASK] heavily, and frowned up at the tree beneath which they were sitting. A little green bird was observing her, so brilliant and neat that it might have hopped straight out of a shop. On catching her eye it closed its own, gave a small skip and prepared to go to bed.
+Q651-1	Anaphoric	she	The words were obscure, but she understood the uneasiness that produced them. She had experienced it twice herself, during her own engagements   this vague contrition and doubt. All had come right enough afterwards and doubtless would this time   marriage makes most things right enough. "I wouldn't worry," [MASK] said. "It's partly the odd surroundings; you and I keep on attending to trifles instead of what's important; we are what the people here call    new.'"
+
+"You mean that my bothers are mixed up with India?"
+
+"India's      " She stopped.
+
+"What made you call it a ghost?"
+
+"Call what a ghost?"
+
+"The animal thing that hit us. Didn't you say    Oh, a ghost,' in passing.
+Q757-0	Anaphoric	he	"And does not morality also decline?"
+
+"It depends what you call   yes, yes, I suppose morality does decline."
+
+"Excuse the question, but if this is the case, how is England justified in holding India?"
+
+There they were! Politics again. "It's a question I can't get my mind on to," [MASK] replied. "I'm out here personally because I needed a job. I cannot tell you why England is here or whether she ought to be here. It's beyond me."
+
+"Well-qualified Indians also need jobs in the educational.
+Q792	Explicit	Aziz	"Did she think they were your brothers?"
+
+"Of course not, but the word exists and is convenient. All men are my brothers, and as soon as one behaves as such he may see my wife."
+
+"And when the whole world behaves as such, there will be no more purdah?"
+
+"It is because you can say and feel such a remark as that, that I show you the photograph," said [MASK] gravely.
+
+"It is beyond the power of most men. It is because you behave well while I behave badly that I show it you. I never expected you to come back just now when I called you. I thought,    He has certainly done with me; I have insulted him.'
+Q796-0	Explicit	Aziz	"It's beginning at the wrong end, isn't it? I know, but institutions and the governments don't." He looked again at the photograph. The lady faced the world at her husband's wish and her own, but how bewildering she found it, the echoing contradictory world!
+
+"Put her away, she is of no importance, she is dead," said [MASK] gently. "I showed her to you because I have nothing else to show. You may look round the whole of my bungalow now, and empty everything. I have no other secrets, my three children live away with their grandmamma, and that is all.
+Q822-1	Explicit	Fielding	How's that?"
+
+"She goes on and on as if she's at a lecture   trying ever so hard to understand India and life, and occasionally taking a note."
+
+"I thought her so nice and sincere."
+
+"So she probably is," said [MASK], ashamed of his roughness: any suggestion that he should marry always does produce overstatements on the part of the bachelor, and a mental breeze. "But I can't marry her if I wanted to, for she has just become engaged to the City Magistrate."
+
+"Has she indeed? I am so glad!" he exclaimed with relief, for this exempted him from the Marabar expedition: he would scarcely be expected to entertain regular Anglo-Indians.
+
+"It's the old mother's doing. She was afraid her dear boy would choose for himself, so she brought out the girl on purpose, and flung them together until it happened.
+Q906-0	Explicit	Aziz	Well, I must admit that England has it as regards sunrises. Do you remember Grasmere?"
+
+"Ah, dearest Grasmere!" Its little lakes and mountains were beloved by them all. Romantic yet manageable, it sprang from a kindlier planet. Here an untidy plain stretched to the knees of the Marabar.
+
+"Good morning, good morning, put on your topis," shouted [MASK] from farther down the train. "Put on your topis at once, the early sun is highly dangerous for heads. I speak as a doctor."
+
+"Good morning, good morning, put on your own."
+
+"Not for my thick head," he laughed, banging it and holding up pads of his hair.
+Q958	Anaphoric	he	I want to consult you about this Anglo-Indian difficulty. Can you give me any advice?"
+
+"You are absolutely unlike the others, I assure you. You will never be rude to my people."
+
+"I am told we all get rude after a year."
+
+"Then you are told a lie," [MASK] flashed, for she had spoken the truth and it touched him on the raw; it was itself an insult in these particular circumstances. He recovered himself at once and laughed, but her error broke up their conversation   their civilization it had almost been   which scattered like the petals of a desert flower, and left them in the middle of the hills.
+Q959	Anaphoric	he	"Then you are told a lie," he flashed, for she had spoken the truth and it touched him on the raw; it was itself an insult in these particular circumstances. He recovered himself at once and laughed, but her error broke up their conversation   their civilization it had almost been   which scattered like the petals of a desert flower, and left them in the middle of the hills. "Come along," [MASK] said, holding out a hand to each. They got up a little reluctantly, and addressed themselves to sightseeing.
+
+The first cave was tolerably convenient. They skirted the puddle of water, and then climbed up over some unattractive stones, the sun crashing on their backs.
+Q960	Explicit	Adela	As each person emerged she looked for a villain, but none was there, and she realized that she had been among the mildest individuals, whose only desire was to honour her, and that the naked pad was a poor little baby, astride its mother's hip. Nothing evil had been in the cave, but she had not enjoyed herself; no, she had not enjoyed herself, and she decided not to visit a second one.
+
+"Did you see the reflection of his match   rather pretty?" asked [MASK].
+
+"I forget . . ."
+
+"But he says this isn't a good cave, the best are on the Kawa Dol."
+
+"I don't think I shall go on to there. I dislike climbing."
+
+"Very well, let's sit down again in the shade until breakfast's ready.
+Q975	Explicit	Aziz	En route_ for these, they encountered several isolated caves, which the guide persuaded them to visit, but really there was nothing to see; they lit a match, admired its reflection in the polish, tested the echo and came out again. [MASK] was "pretty sure they should come on some interesting old carvings soon," but only meant he wished there were some carvings. His deeper thoughts were about the breakfast. Symptoms of disorganization had appeared as he left the camp. He ran over the menu: an English breakfast, porridge and mutton chops, but some Indian dishes to cause conversation, and pan afterwards.
+Q984	Anaphoric	he	Yes, indeed, do come and see my wife"   for he felt it more artistic to have his wife alive for a moment.
+
+"Thank you," she said absently.
+
+"She is not in Chandrapore just now."
+
+"And have you children?"
+
+"Yes, indeed, three," [MASK] replied in firmer tones.
+
+"Are they a great pleasure to you?"
+
+"Why, naturally, I adore them," he laughed.
+
+"I suppose so." What a handsome little Oriental he was, and no doubt his wife and children were beautiful too, for people usually get what they already possess.
+Q989	Anaphoric	he	It challenged a new conviction of his community, and new convictions are more sensitive than old. If she had said, "Do you worship one god or several?" he would not have objected. But to ask an educated Indian Moslem how many wives he has   appalling, hideous! He was in trouble how to conceal his confusion. "One, one in my own particular case," [MASK] sputtered, and let go of her hand. Quite a number of caves were at the top of the track, and thinking, "Damn the English even at their best," he plunged into one of them to recover his balance. She followed at her leisure, quite unconscious that she had said the wrong thing, and not seeing him, she also went into a cave, thinking with half her mind "sight-seeing bores me," and wondering with the other half about marriage.
+Q1092	Anaphoric	he	What is the charge, precisely?"
+
+"That he followed her into the cave and made insulting advances. She hit at him with her field-glasses; he pulled at them and the strap broke, and that is how she got away. When we searched him just now, they were in his pocket."
+
+"Oh no, oh no, no; it'll be cleared up in five minutes," [MASK] cried again.
+
+"Have a look at them."
+
+The strap had been newly broken, the eye-piece was jammed. The logic of evidence said "Guilty."
+
+"Did she say any more?"
+
+"There was an echo that appears to have frightened her.
+Q1106	Anaphoric	he	"Hardly at all. . . . But you see I believe she's under some hideous delusion, and that that wretched boy is innocent."
+
+The policeman started in surprise, and a shadow passed over his face, for he could not bear his dispositions to be upset. "I had no idea that was in your mind," [MASK] said, and looked for support at the signed deposition, which lay before him.
+
+"Those field-glasses upset me for a minute, but I've thought since: it's impossible that, having attempted to assault her, he would put her glasses into his pocket.
+Q1184	Anaphoric	he	I must not detain you, but I have a small private difficulty on which I want your help; I am leaving your service shortly, as you know."
+
+"Yes, alas!"
+
+"And am returning to my birthplace in Central India to take charge of education there. I want to start a High School there on sound English lines, that shall be as like Government College as possible."
+
+"Well?" [MASK] sighed, trying to take an interest.
+
+"At present there is only vernacular education at Mau. I shall feel it my duty to change all that. I shall advise His Highness to sanction at least a High School in the Capital, and if possible another in each pargana.
+Q1203	Anaphoric	he	It was performed by me." He looked shyly down the sleeve of his own coat. "And by my students. It was even performed by the lady herself. When evil occurs, it expresses the whole of the universe. Similarly when good occurs."
+
+"And similarly when suffering occurs, and so on and so forth, and everything is anything and nothing something," [MASK] muttered in his irritation, for he needed the solid ground.
+
+"Excuse me, you are now again changing the basis of our discussion. We were discussing good and evil. Suffering is merely a matter for the individual. If a young lady has sunstroke, that is a matter of no significance to the universe.
+Q1311-1	Anaphoric	the policeman	I do this less every day, I shall soon be quite well," she said, blowing her nose and feeling hideous.
+
+"What I need is something to do. That is why I keep on with this ridiculous crying."
+
+"It's not ridiculous, we think you wonderful," said [MASK] very sincerely. "It only bothers us that we can't help you more. Your stopping here   at such a time   is the greatest honour this house      " He too was overcome with emotion. "By the way, a letter came here for you while you were ill," he continued. "I opened it, which is a strange confession to make. Will you forgive me? The circumstances are peculiar.
+Q1345	Anaphoric	the old lady	I felt you would be able to explain it . . . this will comfort me so. . . ."
+
+"If you don't know, you don't know; I can't tell you."
+
+"I think you're rather unkind not to say."
+
+"Say, say, say," said [MASK] bitterly. "As if anything can be said! I have spent my life in saying or in listening to sayings; I have listened too much. It is time I was left in peace. Not to die," she added sourly.
+Q1357-0	Anaphoric	the young man	I shall attend your marriage, but not your trial," she informed them, tapping her knee; she had become very restless, and rather ungraceful. "Then I shall go to England."
+
+"You can't go to England in May, as you agreed."
+
+"I have changed my mind."
+
+"Well, we'd better end this unexpected wrangle," said [MASK], striding about. "You appear to want to be left out of everything, and that's enough."
+
+"My body, my miserable body," she sighed. "Why isn't it strong? Oh, why can't I walk away and be gone?
+Q1358-0	Anaphoric	she	"You can't go to England in May, as you agreed."
+
+"I have changed my mind."
+
+"Well, we'd better end this unexpected wrangle," said the young man, striding about. "You appear to want to be left out of everything, and that's enough."
+
+"My body, my miserable body," [MASK] sighed. "Why isn't it strong? Oh, why can't I walk away and be gone? Why can't I finish my duties and be gone? Why do I get headaches and puff when I walk? And all the time this to do and that to do and this to do in your way and that to do in her way, and everything sympathy and confusion and bearing one another's burdens.
+Q1359-0	Anaphoric	he	The human race would have become a single person centuries ago if marriage was any use. And all this rubbish about love, love in a church, love in a cave, as if there is the least difference, and I held up from my business over such trifles!"
+
+"What do you want?" [MASK] said, exasperated. "Can you state it in simple language? If so, do."
+
+"I want my pack of patience cards."
+
+"Very well, get them."
+
+He found, as he expected, that the poor girl was crying.
+Q1391-0	Anaphoric	he	"So you won't go saying he's innocent again, will you? for every servant I've got is a spy." He went to the window. The mali had gone, or rather had turned into two small children   impossible they should know English, but he sent them packing. "They all hate us," [MASK] explained. "It'll be all right after the verdict, for I will say this for them, they do accept the accomplished fact; but at present they're pouring out money like water to catch us tripping, and a remark like yours is the very thing they look out for.
+Q1407-0	Explicit	Adela	Was he in the cave and were you in the cave and on and on . . . and Unto us a Son is born, unto us a Child is given . . . and am I good and is he bad and are we saved? . . . and ending everything the echo."
+
+"I don't hear it so much," said [MASK], moving towards her. "You send it away, you do nothing but good, you are so good."
+
+"I am not good, no, bad." She spoke more calmly and resumed her cards, saying as she turned them up, "A bad old woman, bad, bad, detestable.
+Q1409-0	Explicit	Ronny	I used to be good with the children growing up, also I meet this young man in his mosque, I wanted him to be happy. Good, happy, small people. They do not exist, they were a dream. . . . But I will not help you to torture him for what he never did. There are different ways of evil and I prefer mine to yours."
+
+"Have you any evidence in the prisoner's favour?" said [MASK] in the tones of the just official. "If so, it is your bounden duty to go into the witness-box for him instead of for us. No one will stop you."
+
+"One knows people's characters, as you call them," she retorted disdainfully, as if she really knew more than character but could not impart it.
+Q1421	Anaphoric	she	She woke in the middle of the night with a start, for the train was falling over the western cliff. Moonlit pinnacles rushed up at her like the fringes of a sea; then a brief episode of plain, the real sea, and the soupy dawn of Bombay. "I have not seen the right places," [MASK] thought, as she saw embayed in the platforms of the Victoria Terminus the end of the rails that had carried her over a continent and could never carry her back. She would never visit Asirgarh or the other untouched places; neither Delhi nor Agra nor the Rajputana cities nor Kashmir, nor the obscurer marvels that had sometimes shone through men's speech: the bilingual rock of Girnar, the statue of Shri Belgola, the ruins of Mandu and Hampi, temples of Khajraha, gardens of Shalimar.
+Q1464	Explicit	Mrs. Turton	I laughed; I laughed, I tell you, and so would you; that used to be one of these buck niggers, I thought, now he's all septic; damn him, blast his soul   er   I believe he was unspeakably immoral   er      " He subsided, nudged in the ribs, but added, "I wish I'd had the cutting up of my late assistant too; nothing's too bad for these people."
+
+"At last some sense is being talked," [MASK] cried, much to her husband's discomfort.
+
+"That's what I say; I say there's not such a thing as cruelty after a thing like this."
+
+"Exactly, and remember it afterwards, you men. You're weak, weak, weak.
+Q1532-0	Anaphoric	her	Smoothly the voice in the distance proceeded, leading along the paths of truth, and the airs from the punkah behind her wafted her on. . . .
+
+". . . the prisoner and the guide took you on to the Kawa Dol, no one else being present?"
+
+"The most wonderfully shaped of those hills. Yes." As she spoke, she created the Kawa Dol, saw the niches up the curve of the stone, and felt the heat strike her face. And something caused [MASK] to add: "No one else was present to my knowledge. We appeared to be alone.
+Q1574	Anaphoric	she	Where's the car you came in?"
+
+"I shall walk."
+
+"What madness . . . there's supposed to be a riot on . . . the police have struck, no one knows what'll happen next. Why don't you keep to your own people?"
+
+"Ought I to join them?" [MASK] said, without emotion. She felt emptied, valueless; there was no more virtue in her.
+
+"You can't, it's too late. How are you to get round to the private entrance now? Come this way with me   quick   I'll put you into my carriage.
+Q1582	Explicit	the English	The main road through the bazaars was blocked, and [MASK] were gaining the civil station by by-ways; they were caught like caterpillars, and could have been killed off easily.
+
+"What   what have you been doing?" he cried suddenly. "Playing a game, studying life, or what?"
+
+"Sir, I intend these for you, sir," interrupted a student, running down the lane with a garland of jasmine on his arm.
+
+"I don't want the rubbish; get out."
+
+"Sir, I am a horse, we shall be your horses," another cried as he lifted the shafts of the victoria into the air.
+Q1614-0	Anaphoric	he	He had hoped, when he woke up, to find someone had fetched her away, but the College remained isolated from the rest of the universe. She asked whether she could have "a sort of interview," and, when he made no reply, said, "Have you any explanation of my extraordinary behaviour?"
+
+"None," [MASK] said curtly. "Why make such a charge if you were going to withdraw it?"
+
+"Why, indeed."
+
+"I ought to feel grateful to you, I suppose, but      "
+
+"I don't expect gratitude. I only thought you might care to hear what I have to say.
+Q1618-0	Anaphoric	he	Why make such a charge if you were going to withdraw it?"
+
+"Why, indeed."
+
+"I ought to feel grateful to you, I suppose, but      "
+
+"I don't expect gratitude. I only thought you might care to hear what I have to say."
+
+"Oh, well," [MASK] grumbled, feeling rather schoolboyish. "I don't think a discussion between us is desirable. To put it frankly, I belong to the other side in this ghastly affair."
+
+"Would it not interest you to hear my side?"
+
+"Not much.
+Q1622	Anaphoric	he	My echo has gone   I call the buzzing sound in my ears an echo. You see, I have been unwell ever since that expedition to the caves, and possibly before it."
+
+The remark interested him rather; it was what he had sometimes suspected himself. "What kind of illness?" [MASK] enquired.
+
+She touched her head at the side, then shook it.
+
+"That was my first thought, the day of the arrest: hallucination."
+
+"Do you think that would be so?" she asked with great humility. "What should have given me an hallucination?"
+
+"One of three things certainly happened in the Marabar," he said, getting drawn into a discussion against his will.
+Q1668	Explicit	Fielding	Is it a dream, and if so, when did it start? And without doubt it is a dream that has not yet finished. For I gather you have not done with us yet, and it is now the turn of the poor old guide who conducted you round the caves."
+
+"Not at all, we were only discussing possibilities," interposed [MASK].
+
+"An interesting pastime, but a lengthy one. There are one hundred and seventy million Indians in this notable peninsula, and of course one or other of them entered the cave. Of course some Indian is the culprit, we must never doubt that.
+Q1675-1	Explicit	Hamidullah	You must stop here at the College. I shall be away at least two days, and you can have the place entirely to yourself, and make your plans at your convenience."
+
+"I don't agree at all," said [MASK], with every symptom of dismay. "The idea is a thoroughly bad one. There may quite well be another demonstration to-night, and suppose an attack is made on the College. You would be held responsible for this lady's safety, my dear fellow."
+
+"They might equally attack the Dak Bungalow."
+
+"Exactly, but the responsibility there ceases to be yours."
+
+"Quite so. I have given trouble enough."
+
+"Do you hear? The lady admits it herself. It's not an attack from our people I fear   you should see their orderly conduct at the hospital; what we must guard against is an attack secretly arranged by the police for the purpose of discrediting you.
+Q1786-0	Anaphoric	she	Why didn't I rush up to him after the trial? Yes, of course I will write him an apology, but please will you dictate it?" Between them they concocted a letter, sincere, and full of moving phrases, but it was not moving as a letter. "Shall I write another?" [MASK] enquired. "Nothing matters if I can undo the harm I have caused. I can do this right, and that right; but when the two are put together they come wrong. That's the defect of my character. I have never realized it until now.
+Q1815	Anaphoric	he	Not for them was an infinite goal behind the stars, and they never sought it. But wistfulness descended on them now, as on other occasions; the shadow of the shadow of a dream fell over their clear-cut interests, and objects never seen again seemed messages from another world.
+
+"And I do like you so very much, if I may say so," [MASK] affirmed.
+
+"I'm glad, for I like you. Let's meet again."
+
+"We will, in England, if I ever take home leave."
+
+"But I suppose you're not likely to do that yet."
+
+"Quite a chance.
+Q1821	Explicit	Miss Quested	The clean sands, heaped on each side of the canal, seemed to wipe off everything that was difficult and equivocal, and even Port Said looked pure and charming in the light of a rose-grey morning. She went on shore there with an American missionary, they walked out to the Lesseps statue, they drank the tonic air of the Levant. "To what duties, [MASK], are you returning in your own country after your taste of the tropics?" the missionary asked.
+
+"Observe, I don't say to what do you turn, but to what do you _re_-turn. Every life ought to contain both a turn and a _re_-turn. This celebrated pioneer (he pointed to the statue) will make my question clear.
+Q1830-1	Explicit	Aziz	And for that reason, if I may say so, do not introduce too many Persian expressions into the poem, and not too much about the bulbul."
+
+"Half a sec," said [MASK], biting his pencil. He was writing out a prescription. "Here you are. . . . Is not this better than a poem?"
+
+"Happy the man who can compose both."
+
+"You are full of compliments to-day."
+
+"I know you bear me a grudge for trying that case," said the other, stretching out his hand impulsively. "You are so kind and friendly, but always I detect irony beneath your manner.
+Q1889	Anaphoric	he	In your position I should have the sense to know I was surrounded by enemies. You observe I speak in a low voice. It is because I see your sais is new. How do I know he isn't a spy?" He lowered his voice: "Every third servant is a spy."
+
+"Now, what is the matter?" [MASK] asked, smiling.
+
+"Do you contradict my last remark?"
+
+"It simply doesn't affect me. Spies are as thick as mosquitoes, but it's years before I shall meet the one that kills me. You've something else in your mind.
+Q1902-0	Anaphoric	he	Oh dear, East and West. Most misleading. Will you please put your little rotter down at his hospital?"
+
+"You're not offended?"
+
+"Most certainly I am not."
+
+"If you are, this must be cleared up later on."
+
+"It has been," [MASK] answered, dignified. "I believe absolutely what you say, and of that there need be no further question."
+
+"But the way I said it must be cleared up. I was unintentionally rude. Unreserved regrets."
+
+"The fault is entirely mine.
+Q1913-1	Explicit	Turton	He was annoyed with himself, but counted on dinner to pull things straight. At the post office he saw the Collector. Their vehicles were parked side by side while their servants competed in the interior of the building. "Good morning; so you are back," said [MASK] icily. "I should be glad if you will put in your appearance at the club this evening."
+
+"I have accepted re-election, sir. Do you regard it as necessary I should come? I should be glad to be excused; indeed, I have a dinner engagement this evening."
+
+"It is not a question of your feelings, but of the wish of the Lieutenant-Governor.
+Q1924-0	Anaphoric	he	"What is the nature of the business? Will it leave you much spare time?"
+
+"Enough to see my friends."
+
+"I expected you to make such a reply. You are a faithful friend. Shall we now talk about something else?"
+
+"Willingly. What subject?"
+
+"Poetry," [MASK] said, with tears in his eyes. "Let us discuss why poetry has lost the power of making men brave. My mother's father was also a poet, and fought against you in the Mutiny. I might equal him if there was another mutiny.
+Q2046	Explicit	Aziz	The extraordinary youth was right, and he put them behind his back before replying with outward anger: "What the devil have my hands to do with you? This is a most strange remark. I am a qualified doctor, who will not hurt you."
+
+"I don't mind pain, there is no pain."
+
+"No pain?"
+
+"Not really."
+
+"Excellent news," sneered [MASK].
+
+"But there is cruelty."
+
+"I have brought you some salve, but how to put it on in your present nervous state becomes a problem," he continued, after a pause.
+
+"Please leave it with me."
+
+"Certainly not.

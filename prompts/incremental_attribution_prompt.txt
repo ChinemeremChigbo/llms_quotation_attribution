@@ -1,0 +1,31 @@
+**Instruction:** You are an excellent linguist working in the field of literature. I will provide you with a passage of a book where some quotes have unique identifiers marked by headers '|quote_id|'. Your are tasked to build a list of quote attributions by sequentially attributing the marked quotes to their speaker.
+
+**Passage:**
+---
+<INSERT PASSAGE>
+---
+
+**Previous predictions**
+
+---
+<INSERT PREVIOUS PREDICTIONS>
+---
+
+**Step 1:** Attribute sequentially each quote to their speaker.
+
+**Step 2:** Match each speaker found in the previous step with one of the following name:
+
+**Names**
+
+---
+<INSERT CHARACTER LIST>
+---
+
+**Step 3:** Replace the speakers found in Step 1 with their matching name found in Step 2. Your answer should follow this JSON format:
+
+{
+'quote_id_1' : 'predicted_speaker_1',
+'quote_id_2' : 'predicted_speaker_2'
+}
+
+Your answer should only contain the output of **Step 3** and can only contain quote identifiers and speakers. Never generate quote content and don't explain your reasoning.
