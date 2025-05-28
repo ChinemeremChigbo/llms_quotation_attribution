@@ -11,3 +11,4 @@ spacy==3.7.4
 torch==2.2.2
 tqdm==4.66.2
 transformers==4.39.2
+google-genai==1.16.1
