@@ -2,8 +2,8 @@ import argparse
 import json
 import os
 import re
-import string
 from collections import defaultdict
+
 from google import genai
 from tqdm import tqdm
 
@@ -12,9 +12,7 @@ client = genai.Client(
     api_key=os.environ["GOOGLE_AI_STUDIO"],
 )
 
-ALPHABET = [i.upper() for i in string.ascii_lowercase]
 FLASH_MODEL = "gemini-2.5-flash-preview-05-20"
-PRO_MODEL = "gemini-2.5-pro-preview-05-06"
 
 
 def clean_context(text):
@@ -103,7 +101,6 @@ def get_first_prompt(novel_data, idx, to_predict):
 
 
 def get_incremental_prompt(novel_data, idx, to_predict, past_preds):
-    # 1) Extract & clean the chunk
     context = novel_data["chunks"][idx]
     context = delete_inquote(context)
     context, mapper = restart_quote_seq(context, start_from=1)
@@ -258,20 +255,12 @@ if __name__ == "__main__":
     parser.add_argument(
         "--stop_incremental", help="do not use incremental prompt", action="store_true"
     )
-    parser.add_argument(
-        "--use_70b",
-        help="do you want to use 70b model?",
-        default=False,
-        action="store_true",
-    )
 
     args = parser.parse_args()
 
     split = 0
     with open(args.data_path, "r") as f:
         data = json.load(f)
-
-    model_id = PRO_MODEL if args.use_70b else FLASH_MODEL
 
     os.makedirs("results", exist_ok=True)
 
@@ -308,7 +297,7 @@ if __name__ == "__main__":
                 )
 
             response = client.models.generate_content(
-                model=model_id,
+                model=FLASH_MODEL,
                 contents=prompt_text,
             )
             raw_output = response.text
