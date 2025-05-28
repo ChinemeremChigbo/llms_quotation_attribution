@@ -12,7 +12,8 @@ from token_hgface import HGFACE_TOKEN
 
 torch.manual_seed(42)
 np.random.seed(42)
-device = torch.device("cuda:0")
+# device = torch.device("cuda:0")
+device = torch.device("mps")
 
 def clean_context(text) : 
     text = re.sub(r"([\w\d\.\,\:])[\n]{1}([\w\d\.\,\:])", lambda x: x.group(1) + " " + x.group(2), text)
@@ -128,7 +129,7 @@ if __name__ == "__main__" :
     token=HGFACE_TOKEN,
     )
 
-    quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+    quantization_config = BitsAndBytesConfig(load_in_8bit=False)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         is_decoder=True,

@@ -12,7 +12,8 @@ from collections import defaultdict
 import pickle as pkl 
 from token_hgface import HGFACE_TOKEN
 
-device = torch.device("cuda:0")
+# device = torch.device("cuda:0")
+device = torch.device("mps")
 # device  = "cpu"
 
 def verbalize(df, idx, columns=None) :
@@ -69,7 +70,7 @@ if __name__ == "__main__" :
     tokenizer.padding_side = "right"
 
 
-    quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+    quantization_config = BitsAndBytesConfig(load_in_8bit=False)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         is_decoder=True,
