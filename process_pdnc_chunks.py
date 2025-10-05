@@ -1,15 +1,30 @@
-import tqdm
-import string
-import pickle as pkl
-import pandas as pd
-import os
-import string
-import json
-from collections import defaultdict
 import argparse
-from transformers import AutoTokenizer
+import json
+import os
+import pickle as pkl
 import re
-from token_hgface import HGFACE_TOKEN
+import string
+from collections import defaultdict
+
+import pandas as pd
+import tqdm
+from dotenv import load_dotenv
+from transformers import AutoTokenizer
+
+load_dotenv()
+
+PARAGRAPH_PATTERN = re.compile(r"(?:[^\n]|(?:\n(?!\n)))+")
+
+
+def extract_paragraph_spans(text: str):
+    """Return paragraph start/end offsets in `text`, split on blank lines."""
+    spans = []
+    for match in PARAGRAPH_PATTERN.finditer(text):
+        segment = match.group()
+        if not segment.strip():
+            continue
+        spans.append({"start": match.start(), "end": match.end()})
+    return spans
 
 
 def get_offset_bytes(qtext, sb, eb):
@@ -28,38 +43,62 @@ def get_offset_bytes(qtext, sb, eb):
 def get_enhanced_char_list(charInfo, add_lowercase=False):
     """This function processes the original character list to extend it to additional cases. Examples:
 
-"_narr" --> ["Narr", "Narrator", "I"]
-"Miss. Anne Eliot" --> ["Anne Eliot"]"""
-    PREFIXES = ['Mr.', 'Mrs.', 'Miss.', 'Lady', 'Sir', 'Mrs', 'Mr', 'Miss', 'Dr.', 'Dr', 'Madame', 'Madam', \
-            'Mademoiselle', 'St.', 'St', 'Ms.', 'Ms', 'Count', 'Countess', "The"]
+    "_narr" --> ["Narr", "Narrator", "I"]
+    "Miss. Anne Eliot" --> ["Anne Eliot"]"""
+    PREFIXES = [
+        "Mr.",
+        "Mrs.",
+        "Miss.",
+        "Lady",
+        "Sir",
+        "Mrs",
+        "Mr",
+        "Miss",
+        "Dr.",
+        "Dr",
+        "Madame",
+        "Madam",
+        "Mademoiselle",
+        "St.",
+        "St",
+        "Ms.",
+        "Ms",
+        "Count",
+        "Countess",
+        "The",
+    ]
     PREFIXES.extend([x.lower() for x in PREFIXES])
 
-    #don't include lowercase because names can also be common nouns sometimes (Lily, Rose)
+    # don't include lowercase because names can also be common nouns sometimes (Lily, Rose)
     enhanced_name2id = {}
     name2id = charInfo["name2id"]
     new_cands = {}
-    
+
     for name, id_ in name2id.items():
-        if name in ["_narr", "Narr"] : 
+        if name in ["_narr", "Narr"]:
             enhanced_name2id["Narrator"] = id_
             enhanced_name2id["The Narrator"] = id_
             enhanced_name2id["I"] = id_
             narr_id = id_
-        else : 
+        else:
             enhanced_name2id[name] = id_
-            
+
         if add_lowercase:
             enhanced_name2id[name.lower()] = id_
-    if any(["_narr" in charInfo["id2parent"].values(), "Narr" in charInfo["id2parent"].values()]) :
+    if any(
+        [
+            "_narr" in charInfo["id2parent"].values(),
+            "Narr" in charInfo["id2parent"].values(),
+        ]
+    ):
         charInfo["id2parent"][narr_id] = "Narrator"
-    
+
     for name, id_ in name2id.items():
-        
         n_words = name.split()
         if n_words[0] in PREFIXES:
             new_cand = " ".join(n_words[1:])
 
-            if (len(new_cand)>0) and (new_cand not in enhanced_name2id):
+            if (len(new_cand) > 0) and (new_cand not in enhanced_name2id):
                 if new_cand not in new_cands:
                     new_cands[new_cand] = []
                 new_cands[new_cand].append(id_)
@@ -69,22 +108,31 @@ def get_enhanced_char_list(charInfo, add_lowercase=False):
                         new_cands[new_cand.lower()] = []
 
                     new_cands[new_cand.lower()].append(id_)
-        
-    
+
     for new_cand, ids in new_cands.items():
         ids = list(set(ids))
         if len(ids) == 1:
             enhanced_name2id[new_cand] = ids[0]
 
-    print("original count: {} ; enhanced count: {}".format(len(name2id), len(enhanced_name2id)))
-    
+    print(
+        "original count: {} ; enhanced count: {}".format(
+            len(name2id), len(enhanced_name2id)
+        )
+    )
+
     enhanced_id2names = {}
     for n, i in enhanced_name2id.items():
         if i not in enhanced_id2names:
             enhanced_id2names[i] = set()
         enhanced_id2names[i].add(n)
-    
-    return {'name2id': enhanced_name2id, 'id2names': enhanced_id2names, "id2parent" : charInfo["id2parent"], "id2gender" : charInfo["id2gender"]}
+
+    return {
+        "name2id": enhanced_name2id,
+        "id2names": enhanced_id2names,
+        "id2parent": charInfo["id2parent"],
+        "id2gender": charInfo["id2gender"],
+    }
+
 
 def iterate(encoding, char, how="left"):
     """Iterate over a transformers.tokenizer.Encoding to returns the token at position `char` or its nearest (left or right) token."""
@@ -165,8 +213,8 @@ def read_quotes(root_folder, novel):
 
 
 def prefix_suffix_quote_id(text, q_char_s, q_char_e, counter, speaker=None):
-    """Replace the original text by adding prefixes and suffixes to the quote starting at position `q_char_s` and `q_char_e`. Also add another prefix if provided a `speaker` name. 
-The replacement will look like that: '<text> [q] <text>' --> '<text> |`counter`| [q] ||`counter`|| <text>' where [q] is the target quote."""
+    """Replace the original text by adding prefixes and suffixes to the quote starting at position `q_char_s` and `q_char_e`. Also add another prefix if provided a `speaker` name.
+    The replacement will look like that: '<text> [q] <text>' --> '<text> |`counter`| [q] ||`counter`|| <text>' where [q] is the target quote."""
     if speaker is not None:
         prompt = f"| said by {speaker} |{counter}| "
         end_prompt = f" ||{counter}||"
@@ -218,30 +266,35 @@ The replacement will look like that: '<text> [q] <text>' --> '<text> |`counter`|
     return j, length
 
 
-def prune_info(speaker_info, speakers) : 
+def prune_info(speaker_info, speakers):
     """Given a dictionary containing the character aliases, returns a subset of this dictionary for the provided `speakers`."""
     valid_ids = [speaker_info["name2id"][s] for s in speakers]
 
-    id2parent = {k:v for k,v in speaker_info["id2parent"].items() if k in valid_ids}
-    id2names = {k:v for k,v in speaker_info["id2names"].items() if k in valid_ids}
-    name2id = {k:v for k,v in speaker_info["name2id"].items() if v in valid_ids}
-    id2gender = {k:v for k,v in speaker_info["id2gender"].items() if k in valid_ids}
+    id2parent = {k: v for k, v in speaker_info["id2parent"].items() if k in valid_ids}
+    id2names = {k: v for k, v in speaker_info["id2names"].items() if k in valid_ids}
+    name2id = {k: v for k, v in speaker_info["name2id"].items() if v in valid_ids}
+    id2gender = {k: v for k, v in speaker_info["id2gender"].items() if k in valid_ids}
 
-    print(f"original {len(speaker_info['name2id'])} ; pruned {len(speaker_info['name2id']) - len(name2id)}")
+    print(
+        f"original {len(speaker_info['name2id'])} ; pruned {len(speaker_info['name2id']) - len(name2id)}"
+    )
 
-    return {"id2parent" : id2parent, "id2names" : id2names, "name2id":name2id, "id2gender" : id2gender} 
-    
+    return {
+        "id2parent": id2parent,
+        "id2names": id2names,
+        "name2id": name2id,
+        "id2gender": id2gender,
+    }
+
+
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser()
     parser.add_argument("--source_data", help="Filename containing source data")
     parser.add_argument("--save_path", help="path to save json file")
     parser.add_argument(
         "--max_length", help="Max length of context + quote", type=int, default=4096
     )
-    parser.add_argument(
-        "--strides", help="Length of stride", type=int, default=1024
-    )
+    parser.add_argument("--strides", help="Length of stride", type=int, default=1024)
     parser.add_argument(
         "--right_context_length",
         help="Max length of quote + right_context",
@@ -252,7 +305,7 @@ if __name__ == "__main__":
         "--model_name",
         help="model huggingface name",
         type=str,
-        default="meta-llama/Meta-Llama-3-8B-Instruct",
+        default="meta-llama/Llama-3.1-8B-Instruct",
     )
     parser.add_argument(
         "--avoid_long_tail",
@@ -275,7 +328,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(
-        args.model_name, use_fast=True, token=HGFACE_TOKEN
+        args.model_name, use_fast=True, token=os.getenv("HGFACE_TOKEN", "")
     )
 
     data = defaultdict(list)
@@ -285,27 +338,27 @@ if __name__ == "__main__":
         for i in os.listdir(args.source_data)
         if os.path.isdir(os.path.join(args.source_data, i))
     ]
-    
+
     for novel in tqdm.tqdm(novels):
         print(novel.upper())
         with open(os.path.join(args.source_data, novel, "novel.txt")) as f:
             text = f.read()
         quotes = read_quotes(args.source_data, novel)
-        
-        # we also remove "_narr" which means that the narrator is never given a name. 
+
+        # we also remove "_narr" which means that the narrator is never given a name.
         valid_quotes = [
             q for q in quotes if q[6] not in ["_group", "_unknowable", "_narr"]
         ]
         speakers = set([q[6] for q in valid_quotes])
-        
+
         with open(
             os.path.join(args.source_data, novel, "charInfo.dict.pkl"), "rb"
         ) as f:
             speaker_info = pkl.load(f)
-        
+
         speaker_info = prune_info(speaker_info, speakers)
         speaker_info = get_enhanced_char_list(speaker_info)
-        
+
         chap_info = pd.read_csv(os.path.join(args.source_data, novel, "chap_info.csv"))
 
         ends = []
@@ -321,18 +374,16 @@ if __name__ == "__main__":
         valid_quotes = [
             q for q in quotes if q[6] not in ["_group", "_unknowable", "_narr"]
         ]
-        
+
         # First we iterate through the quotes to modify the text and assign the suffixes and prefixes for each quote.
         for idx, quote in enumerate(valid_quotes):
-            
             if quote[5] == "Explicit":
                 speaker = quote[6]
                 end = quote[3] + counter
                 start = quote[2] + counter
-                
-                # 
-                text, prompt_length = prefix_suffix_quote_id(
-                            text, start, end, idx)
+
+                #
+                text, prompt_length = prefix_suffix_quote_id(text, start, end, idx)
 
                 starts.append(start)
                 counter += prompt_length
@@ -346,17 +397,24 @@ if __name__ == "__main__":
                 counter += prompt_length
                 ends.append(quote[3] + counter)
                 is_explicit.append(0)
-                
+
             chap_id = quote[1]
             offset_by_chap[chap_id] = counter
 
             c_type[idx] = quote[8]
             speakers.append(quote[6])
             q_type[idx] = quote[5]
-            
+
         novel_text = text
-        
-        
+        paragraphs = extract_paragraph_spans(novel_text)
+
+        quote_to_paragraph = {}
+        for idx_q, start_pos in enumerate(starts):
+            for pid, para in enumerate(paragraphs):
+                if para["start"] <= start_pos < para["end"]:
+                    quote_to_paragraph[idx_q] = pid
+                    break
+
         # print(len(sorted(set(re.findall("\|([\d]+)\|[^\|]+\|\|[\d]+\|\|", text)), key=int)))
 
         total_max_length = args.max_length
@@ -367,15 +425,17 @@ if __name__ == "__main__":
         is_exp_all = {}
         to_predict = []
         all_texts = []
+        paragraphs_by_chunk = []
+        chunk_spans = []
+        search_pos = 0
         for idx in range(len(chap_info)):
             if (idx > 0) and (idx not in offset_by_chap):
                 offset_by_chap[idx] = offset_by_chap[idx - 1]
             elif (idx == 0) and (idx not in offset_by_chap):
                 offset_by_chap[idx] = 0
-        
+
         # Then we process chapter by chapter, chunking if needed.
         for num, row in chap_info.iterrows():
-
             start, end = int(row["titleStartByte"]), int(row["textEndByte"])
 
             if num == 0:
@@ -394,41 +454,58 @@ if __name__ == "__main__":
 
             texts = tokenizer.batch_decode(toks)
             all_texts.extend(texts)
-            if args.right_context_length == 0 :
+            if args.right_context_length == 0:
                 max_left_context = 0
-            else : 
+            else:
                 max_left_context = max(0, strides - args.right_context_length - 200)
-            
-            
+
             for idx, text in enumerate(texts):
                 if len(texts) == 1:
                     text = tokenizer.decode(toks[idx])
-                    
+
                 # Striding if needed
                 elif idx == 0:
-
-                    if args.right_context_length == 0 :
+                    if args.right_context_length == 0:
                         text = tokenizer.decode(toks[idx])
-                    else : 
-                        text = tokenizer.decode(toks[idx][: -args.right_context_length + 100])
-
+                    else:
+                        text = tokenizer.decode(
+                            toks[idx][: -args.right_context_length + 100]
+                        )
 
                 elif idx == len(texts) - 1:
-                        text = tokenizer.decode(toks[idx][max_left_context: ])
-
+                    text = tokenizer.decode(toks[idx][max_left_context:])
 
                 else:
-                    if args.right_context_length == 0 :
-                        text = tokenizer.decode(toks[idx][max_left_context: ])
-                    else : 
-                        text = tokenizer.decode(toks[idx][max_left_context : -args.right_context_length+100])
+                    if args.right_context_length == 0:
+                        text = tokenizer.decode(toks[idx][max_left_context:])
+                    else:
+                        text = tokenizer.decode(
+                            toks[idx][
+                                max_left_context : -args.right_context_length + 100
+                            ]
+                        )
 
-                
                 # Then we process each quote ids in the current chunk, find its speaker and add it to the data.
+                chunk_start = novel_text.find(text, search_pos)
+                if chunk_start == -1:
+                    stripped = text.strip()
+                    if stripped:
+                        chunk_start = novel_text.find(stripped, search_pos)
+                    else:
+                        chunk_start = search_pos
+                if chunk_start == -1:
+                    chunk_start = search_pos
+
+                chunk_end = chunk_start + len(text)
+                search_pos = max(chunk_end, search_pos)
+                chunk_spans.append({"start": chunk_start, "end": chunk_end})
+
                 spp = {}
                 iee = {}
                 tp = []
-                quote_ids = sorted(set(re.findall("\|([\d]+)\|[^\|]+\|\|[\d]+\|\|", text)), key=int)
+                quote_ids = sorted(
+                    set(re.findall("\|([\d]+)\|[^\|]+\|\|[\d]+\|\|", text)), key=int
+                )
                 for id in quote_ids:
                     if ((args.avoid_long_tail) & (c_type[int(id)] != "minor")) | (
                         not args.avoid_long_tail
@@ -444,25 +521,33 @@ if __name__ == "__main__":
                         if args.only_nexp:
                             if not is_explicit[int(id)]:
                                 if idx > 0:
-                                    if args.predict_all : 
+                                    if args.predict_all:
                                         tp.append(id)
-                                    elif (id not in sum(to_predict, [])) & (id not in tp):
-                                            tp.append(id)
+                                    elif (id not in sum(to_predict, [])) & (
+                                        id not in tp
+                                    ):
+                                        tp.append(id)
                                 else:
                                     tp.append(id)
                         else:
                             if idx > 0:
                                 # avoid predicting twice.
-                                if args.predict_all : 
+                                if args.predict_all:
                                     tp.append(id)
                                 elif (id not in sum(to_predict, [])) & (id not in tp):
-                                        tp.append(id)
+                                    tp.append(id)
                             else:
                                 tp.append(id)
 
                 to_predict.append(tp)
                 sp_in_chunk.append(spp)
                 is_exp.append(iee)
+                overlapping_paragraphs = [
+                    pid
+                    for pid, para in enumerate(paragraphs)
+                    if not (para["end"] <= chunk_start or para["start"] >= chunk_end)
+                ]
+                paragraphs_by_chunk.append(overlapping_paragraphs)
         candidates = list(set(list(sp_all.values())))
 
         aliases = {}
@@ -487,6 +572,10 @@ if __name__ == "__main__":
             "aliases": aliases,
             "name2id": name2id,
             "quote_type": q_type,
+            "paragraphs": paragraphs,
+            "paragraphs_by_chunk": paragraphs_by_chunk,
+            "quote_to_paragraph": quote_to_paragraph,
+            "chunk_spans": chunk_spans,
         }
     if not os.path.exists(os.path.dirname(args.save_path)):
         os.makedirs(os.path.dirname(args.save_path))
